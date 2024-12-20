@@ -12,7 +12,7 @@ export const getProduct = async(req, res)=>{
     }
 }
 export const createProduct = async(req,res)=>{
-    if(!req.body.name || !req.body.price || !req.body.image){
+    if(!req.body.name || !req.body.price){
         res.status(400).send("Please provide all the required fields");
         return;
     }
